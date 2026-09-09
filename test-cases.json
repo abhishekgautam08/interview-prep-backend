@@ -1,0 +1,32 @@
+[
+  {
+    "id": "case-01",
+    "jd": "Senior Backend Engineer\n\nWe are looking for an experienced engineer with 5+ years of React and Node.js to design distributed systems. Must have experience with PostgreSQL, caching architectures, and mentoring junior engineers. Bonus points for AWS and Kubernetes knowledge.",
+    "company_url": "https://example.com",
+    "days": 5
+  },
+  {
+    "id": "case-02",
+    "jd": "Backend dev needed. Write fast APIs in Python.",
+    "company_url": "https://example.com",
+    "days": 3
+  },
+  {
+    "id": "case-03",
+    "jd": "Full Stack Engineer for high growth startup.",
+    "company_url": "https://invalid-non-existent-domain-trao-assessment-test.org/404",
+    "days": 7
+  },
+  {
+    "id": "case-04",
+    "jd": "Lead Architect: High-scale event streaming with Kafka, distributed transactions, and disaster recovery.",
+    "company_url": "https://example.com",
+    "days": 1
+  },
+  {
+    "id": "case-05",
+    "jd": "Site Reliability Engineer: Kubernetes, Terraform, Observability, and incident management.",
+    "company_url": "https://example.com",
+    "days": 60
+  }
+]

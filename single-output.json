@@ -1,0 +1,236 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-09T09:28:42.702Z",
+  "kits": [
+    {
+      "id": "case-01",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Example",
+          "company_url": "https://example.com",
+          "role": "Senior Backend Engineer",
+          "location": "Remote / Hybrid",
+          "jd_chars": 273,
+          "researched_at": "2026-09-09T09:27:28.056Z",
+          "pages_used": [
+            "https://example.com/"
+          ]
+        },
+        "company_brief": {
+          "summary": "Example Domain is a generic placeholder website intended for use in documentation examples.",
+          "what_they_do": "It provides an example domain for illustrative use in technical and legal documentation, offering no active products, services, or commercial operations.",
+          "sources": [
+            "https://example.com/"
+          ]
+        },
+        "role": {
+          "title": "Senior Backend Engineer",
+          "seniority": "Senior",
+          "responsibilities": [
+            "Design distributed systems",
+            "Mentor junior engineers"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "5+ years of experience with React and Node.js",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r2",
+              "text": "Experience with PostgreSQL",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r3",
+              "text": "Experience with caching architectures",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r4",
+              "text": "Experience mentoring junior engineers",
+              "kind": "behavioural",
+              "priority": "must"
+            },
+            {
+              "id": "r5",
+              "text": "AWS knowledge",
+              "kind": "technical",
+              "priority": "nice"
+            },
+            {
+              "id": "r6",
+              "text": "Kubernetes knowledge",
+              "kind": "technical",
+              "priority": "nice"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "In a Node.js backend handling thousands of concurrent requests, how do you diagnose and prevent event loop starvation caused by CPU-bound tasks or synchronous operations? What patterns or native modules would you leverage to offload heavy workloads?",
+            "answer_outline": "Candidates should explain how the Node.js event loop works (Phases: timers, poll, check, etc.) and how long-running sync operations block execution. Diagnosis involves using monitoring tools (e.g., `clinic.js`, `perf_hooks`, event loop lag metrics). Solutions include splitting tasks using `setImmediate()`, offloading CPU-intensive processing to `worker_threads` or child processes, or delegating heavy processing to background job queues (e.g., BullMQ/Redis).",
+            "difficulty": 3
+          },
+          {
+            "id": "q2",
+            "requirement_ids": [
+              "r2"
+            ],
+            "category": "technical",
+            "prompt": "Suppose your PostgreSQL database experiences severe performance degradation due to connection exhaust and slow query latency under high traffic. How would you approach connection management and query optimization?",
+            "answer_outline": "The candidate should discuss setting up connection pooling using tools like PgBouncer (transaction pooling vs. session pooling) to manage backend database connections efficiently. Query optimization steps include analyzing `EXPLAIN ANALYZE` output, identifying missing indexes (B-Tree vs GIN/GiST), addressing sequential scans, avoiding N+1 queries in ORMs, managing index bloat via `VACUUM`, and utilizing partial or composite indexes where appropriate.",
+            "difficulty": 3
+          },
+          {
+            "id": "q3",
+            "requirement_ids": [
+              "r2",
+              "r3"
+            ],
+            "category": "system-design",
+            "prompt": "Design a multi-tier caching strategy for a high-traffic read-heavy application using PostgreSQL as the primary database. How do you handle cache invalidation, cache stampedes (thundering herd problem), and stale reads?",
+            "answer_outline": "The design should cover multi-level caching (in-memory L1 cache like LRU in Node.js, distributed L2 cache like Redis). Candidates should compare caching patterns (Cache-Aside, Write-Through, Read-Through). To mitigate cache stampedes, they should propose probabilistic early expiration (XFetch), mutex locking (Redis redlock / single flight pattern), or background asynchronous refresh. Cache invalidation strategies like CDC (Change Data Capture via Debezium/Postgres WAL) or pub/sub invalidation signals should be discussed.",
+            "difficulty": 3
+          },
+          {
+            "id": "q4",
+            "requirement_ids": [
+              "r4"
+            ],
+            "category": "behavioural",
+            "prompt": "Describe a scenario where a junior engineer you were mentoring repeatedly submitted code with architectural flaws or poor performance practices. How did you provide feedback and guide them to improve without demotivating them?",
+            "answer_outline": "Look for a structured mentoring approach: using pull requests as teaching moments, framing feedback objectively (focusing on code impact rather than personal criticism), setting clear coding standards/linters/architectural RFCs, pairing on complex tasks, and establishing incremental milestones to build confidence and autonomy.",
+            "difficulty": 2
+          },
+          {
+            "id": "q5",
+            "requirement_ids": [
+              "r1",
+              "r5",
+              "r6"
+            ],
+            "category": "system-design",
+            "prompt": "How would you architect a containerized Node.js service running on AWS Elastic Kubernetes Service (EKS) to handle dynamic auto-scaling gracefully during sudden traffic spikes, ensuring zero downtime and database stability?",
+            "answer_outline": "Key points include configuring Kubernetes Horizontal Pod Autoscaler (HPA) using custom metrics (e.g., event loop delay, HTTP request rate, CPU/Memory utilization). Implementing proper Readiness and Liveness probes in Kubernetes. Handling graceful shutdown (`SIGTERM` signal handling in Node.js to finish active HTTP requests and close PostgreSQL connection pools). Using AWS Managed NAT Gateways / ALB with AWS Target Groups for smooth traffic routing.",
+            "difficulty": 3
+          },
+          {
+            "id": "q6",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "In a full-stack React and Node.js application, how do you optimize Server-Side Rendering (SSR) performance to reduce Time-To-First-Byte (TTFB) and prevent backpressure issues on the Node.js server?",
+            "answer_outline": "Candidates should discuss React Streaming SSR (`renderToPipeableStream`), leveraging Node.js streams to stream HTML chunks directly to the client rather than buffering the entire HTML string in memory. They should mention handling backpressure using stream `.pipe()` or Async Iterators, selective hydration, component-level code splitting, and caching pre-rendered static shells at the CDN edge.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "PostgreSQL MVCC & Connection Exhaustion",
+            "back": "Postgres creates a process per client connection, making connections expensive in RAM/CPU. Solution: Use PgBouncer in transaction pooling mode. MVCC creates tuple versions on updates/deletes; unmanaged long-running transactions prevent VACUUM from cleaning dead tuples, causing table bloat.",
+            "requirement_ids": [
+              "r2"
+            ]
+          },
+          {
+            "id": "f2",
+            "front": "Cache Stampede (Thundering Herd) Mitigation Strategies",
+            "back": "1. Mutex Locking: First cache miss acquires lock to compute value; others wait.\n2. Probabilistic Early Expiration (XFetch): Refresh cache dynamically before TTL expires based on request frequency and remaining TTL.\n3. Background Asynchronous Refresh: Cron/queue updates cache before expiration.",
+            "requirement_ids": [
+              "r3"
+            ]
+          },
+          {
+            "id": "f3",
+            "front": "Node.js Event Loop Lag & Offloading",
+            "back": "Event Loop Lag measures delay between scheduling a callback and its execution. Causes: CPU-heavy calculations, synchronous JSON parsing/crypto. Solutions: Worker Threads for shared memory execution, setImmediate() decomposition, or external job processing workers.",
+            "requirement_ids": [
+              "r1"
+            ]
+          },
+          {
+            "id": "f4",
+            "front": "Kubernetes Pod Lifecycle & Node.js Graceful Shutdown",
+            "back": "Upon termination signal (SIGTERM), Kubernetes removes pod from Service Endpoints. Node.js app must catch SIGTERM, stop accepting new connections (server.close()), complete existing inflight requests, drain database connections, and exit within preStop / terminationGracePeriodSeconds.",
+            "requirement_ids": [
+              "r1",
+              "r5",
+              "r6"
+            ]
+          },
+          {
+            "id": "f5",
+            "front": "Effective Mentorship Checklist for Senior Engineers",
+            "back": "1. Focus PR feedback on 'why' over 'what'.\n2. Establish clear architectural patterns & RFC processes.\n3. Practice regular pair programming on high-complexity tasks.\n4. Delegating ownership, allowing controlled failure with safety nets.",
+            "requirement_ids": [
+              "r4"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 5,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Deep Dive: Core Technical Architecture & Highest-Priority Requirements",
+              "question_ids": [
+                "q3",
+                "q5"
+              ],
+              "minutes": 40
+            },
+            {
+              "day": 2,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 2)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 3)",
+              "question_ids": [
+                "q2"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 4,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 4)",
+              "question_ids": [
+                "q6"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 5,
+              "focus": "Final Preparation: Behavioral Rehearsal, Company Alignment & Strategy",
+              "question_ids": [
+                "q4"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    }
+  ]
+}

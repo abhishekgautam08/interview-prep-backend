@@ -1,0 +1,1096 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-08T17:46:04.730Z",
+  "kits": [
+    {
+      "id": "case-01",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Example",
+          "company_url": "https://example.com",
+          "role": "<untrusted_jd>",
+          "location": "Remote / Hybrid",
+          "jd_chars": 273,
+          "researched_at": "2026-09-08T17:44:51.987Z",
+          "pages_used": [
+            "https://example.com/"
+          ]
+        },
+        "company_brief": {
+          "summary": "A modern technology company building high-impact software solutions.",
+          "what_they_do": "They develop mission-critical developer tools, cloud infrastructure, and enterprise workflows.",
+          "sources": [
+            "https://example.com/"
+          ]
+        },
+        "role": {
+          "title": "<untrusted_jd>",
+          "seniority": "Mid-Level",
+          "responsibilities": [
+            "Design and implement high-throughput distributed systems",
+            "Collaborate closely with product managers and cross-functional stakeholders",
+            "Ensure code quality through rigorous automated testing and peer code reviews"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "Proficiency with React and modern frontend architecture",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r2",
+              "text": "Experience building scalable Node.js and distributed backend services",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r3",
+              "text": "Experience with cloud infrastructure (AWS/GCP, Docker, Kubernetes)",
+              "kind": "technical",
+              "priority": "nice"
+            },
+            {
+              "id": "r4",
+              "text": "Mentoring junior engineers and cross-functional team leadership",
+              "kind": "behavioural",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r1?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 1
+          },
+          {
+            "id": "q2",
+            "requirement_ids": [
+              "r2"
+            ],
+            "category": "behavioural",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r2?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 2
+          },
+          {
+            "id": "q3",
+            "requirement_ids": [
+              "r3"
+            ],
+            "category": "technical",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r3?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 3
+          },
+          {
+            "id": "q4",
+            "requirement_ids": [
+              "r4"
+            ],
+            "category": "behavioural",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r4?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 1
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Key concepts and core principles for r1",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r1"
+            ]
+          },
+          {
+            "id": "f2",
+            "front": "Key concepts and core principles for r2",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r2"
+            ]
+          },
+          {
+            "id": "f3",
+            "front": "Key concepts and core principles for r3",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r3"
+            ]
+          },
+          {
+            "id": "f4",
+            "front": "Key concepts and core principles for r4",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r4"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 5,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Deep Dive: Core Technical Architecture & Highest-Priority Requirements",
+              "question_ids": [
+                "q2"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 2,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 2)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Leadership Principles, Collaboration & Impact (Day 3)",
+              "question_ids": [
+                "q4"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 4,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 4)",
+              "question_ids": [
+                "q3"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 5,
+              "focus": "Final Preparation: Behavioral Rehearsal, Company Alignment & Strategy",
+              "question_ids": [
+                "q2"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-02",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Example",
+          "company_url": "https://example.com",
+          "role": "<untrusted_jd>",
+          "location": "Remote / Hybrid",
+          "jd_chars": 46,
+          "researched_at": "2026-09-08T17:45:04.626Z",
+          "pages_used": [
+            "https://example.com/"
+          ]
+        },
+        "company_brief": {
+          "summary": "A modern technology company building high-impact software solutions.",
+          "what_they_do": "They develop mission-critical developer tools, cloud infrastructure, and enterprise workflows.",
+          "sources": [
+            "https://example.com/"
+          ]
+        },
+        "role": {
+          "title": "<untrusted_jd>",
+          "seniority": "Mid-Level",
+          "responsibilities": [
+            "Design and implement high-throughput distributed systems",
+            "Collaborate closely with product managers and cross-functional stakeholders",
+            "Ensure code quality through rigorous automated testing and peer code reviews"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "Experience building scalable Node.js and distributed backend services",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r2",
+              "text": "Strong Python programming and data modeling skills",
+              "kind": "technical",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r1?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 1
+          },
+          {
+            "id": "q2",
+            "requirement_ids": [
+              "r2"
+            ],
+            "category": "behavioural",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r2?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Key concepts and core principles for r1",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r1"
+            ]
+          },
+          {
+            "id": "f2",
+            "front": "Key concepts and core principles for r2",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r2"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 3,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Deep Dive: Core Technical Architecture & Highest-Priority Requirements",
+              "question_ids": [
+                "q2"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 2,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 2)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Final Preparation: Behavioral Rehearsal, Company Alignment & Strategy",
+              "question_ids": [
+                "q2"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-03",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Invalid-non-existent-domain-trao-assessment-test",
+          "company_url": "https://invalid-non-existent-domain-trao-assessment-test.org/404",
+          "role": "<untrusted_jd>",
+          "location": "Remote / Hybrid",
+          "jd_chars": 44,
+          "researched_at": "2026-09-08T17:45:20.590Z",
+          "pages_used": []
+        },
+        "company_brief": {
+          "summary": "Company website could not be retrieved or is unavailable.",
+          "what_they_do": "No public details discovered from the provided URL.",
+          "sources": []
+        },
+        "role": {
+          "title": "<untrusted_jd>",
+          "seniority": "Mid-Level",
+          "responsibilities": [
+            "Design and implement high-throughput distributed systems",
+            "Collaborate closely with product managers and cross-functional stakeholders",
+            "Ensure code quality through rigorous automated testing and peer code reviews"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "Experience building scalable Node.js and distributed backend services",
+              "kind": "technical",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r1?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 1
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Key concepts and core principles for r1",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r1"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 7,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Deep Dive: Core Technical Architecture & Highest-Priority Requirements",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 2,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 2)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 3)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 4,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 4)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 5,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 5)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 6,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 6)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 7,
+              "focus": "Final Preparation: Behavioral Rehearsal, Company Alignment & Strategy",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-04",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Example",
+          "company_url": "https://example.com",
+          "role": "<untrusted_jd>",
+          "location": "Remote / Hybrid",
+          "jd_chars": 103,
+          "researched_at": "2026-09-08T17:45:32.653Z",
+          "pages_used": [
+            "https://example.com/"
+          ]
+        },
+        "company_brief": {
+          "summary": "A modern technology company building high-impact software solutions.",
+          "what_they_do": "They develop mission-critical developer tools, cloud infrastructure, and enterprise workflows.",
+          "sources": [
+            "https://example.com/"
+          ]
+        },
+        "role": {
+          "title": "<untrusted_jd>",
+          "seniority": "Mid-Level",
+          "responsibilities": [
+            "Design and implement high-throughput distributed systems",
+            "Collaborate closely with product managers and cross-functional stakeholders",
+            "Ensure code quality through rigorous automated testing and peer code reviews"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "Experience building scalable Node.js and distributed backend services",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r2",
+              "text": "Mentoring junior engineers and cross-functional team leadership",
+              "kind": "behavioural",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r1?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 1
+          },
+          {
+            "id": "q2",
+            "requirement_ids": [
+              "r2"
+            ],
+            "category": "behavioural",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r2?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Key concepts and core principles for r1",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r1"
+            ]
+          },
+          {
+            "id": "f2",
+            "front": "Key concepts and core principles for r2",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r2"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 1,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Intensive Immersion: High-Priority Architecture, Core Competencies & Rehearsal",
+              "question_ids": [
+                "q2",
+                "q1"
+              ],
+              "minutes": 60
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-05",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Example",
+          "company_url": "https://example.com",
+          "role": "<untrusted_jd>",
+          "location": "Remote / Hybrid",
+          "jd_chars": 89,
+          "researched_at": "2026-09-08T17:45:48.675Z",
+          "pages_used": [
+            "https://example.com/"
+          ]
+        },
+        "company_brief": {
+          "summary": "A modern technology company building high-impact software solutions.",
+          "what_they_do": "They develop mission-critical developer tools, cloud infrastructure, and enterprise workflows.",
+          "sources": [
+            "https://example.com/"
+          ]
+        },
+        "role": {
+          "title": "<untrusted_jd>",
+          "seniority": "Mid-Level",
+          "responsibilities": [
+            "Design and implement high-throughput distributed systems",
+            "Collaborate closely with product managers and cross-functional stakeholders",
+            "Ensure code quality through rigorous automated testing and peer code reviews"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "Experience building scalable Node.js and distributed backend services",
+              "kind": "technical",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Can you discuss your real-world experience and trade-offs regarding requirement r1?",
+            "answer_outline": "Demonstrate deep conceptual mastery, explain architecture trade-offs, and reference a concrete production scenario where you solved this problem.",
+            "difficulty": 1
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Key concepts and core principles for r1",
+            "back": "Core architectural patterns, common pitfalls to avoid, and performance benchmarks.",
+            "requirement_ids": [
+              "r1"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 60,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Deep Dive: Core Technical Architecture & Highest-Priority Requirements",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 2,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 2)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 3)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 4,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 4)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 5,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 5)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 6,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 6)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 7,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 7)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 8,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 8)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 9,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 9)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 10,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 10)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 11,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 11)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 12,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 12)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 13,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 13)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 14,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 14)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 15,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 15)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 16,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 16)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 17,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 17)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 18,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 18)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 19,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 19)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 20,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 20)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 21,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 21)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 22,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 22)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 23,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 23)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 24,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 24)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 25,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 25)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 26,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 26)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 27,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 27)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 28,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 28)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 29,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 29)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 30,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 30)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 31,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 31)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 32,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 32)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 33,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 33)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 34,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 34)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 35,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 35)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 36,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 36)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 37,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 37)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 38,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 38)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 39,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 39)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 40,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 40)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 41,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 41)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 42,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 42)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 43,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 43)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 44,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 44)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 45,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 45)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 46,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 46)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 47,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 47)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 48,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 48)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 49,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 49)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 50,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 50)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 51,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 51)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 52,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 52)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 53,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 53)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 54,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 54)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 55,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 55)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 56,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 56)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 57,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 57)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 58,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 58)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 59,
+              "focus": "Technical Competencies & Hands-on Problem Solving (Day 59)",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 60,
+              "focus": "Final Preparation: Behavioral Rehearsal, Company Alignment & Strategy",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    }
+  ]
+}
