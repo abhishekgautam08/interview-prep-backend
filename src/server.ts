@@ -5,6 +5,8 @@ import { connectDB } from './db/connection.js';
 import authRoutes from './routes/authRoutes.js';
 import kitRoutes from './routes/kitRoutes.js';
 import practiceRoutes from './routes/practiceRoutes.js';
+import healthRoutes from './routes/healthRoutes.js';
+import { generalApiLimiter, authRateLimiter } from './middleware/rateLimiter.js';
 
 const app = express();
 
@@ -26,14 +28,12 @@ app.use(
 );
 app.use(express.json({ limit: '10mb' }));
 
-// General Rate Limiter for all API routes
-import { generalApiLimiter, authRateLimiter } from './middleware/rateLimiter.js';
-app.use('/api', generalApiLimiter);
+// Health Check Endpoints (both /health and /api/health)
+app.use('/health', healthRoutes);
+app.use('/api/health', healthRoutes);
 
-// Health Check
-app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
-});
+// General Rate Limiter for all API routes
+app.use('/api', generalApiLimiter);
 
 // API Routes
 app.use('/api/auth', authRateLimiter, authRoutes);
