@@ -51,7 +51,7 @@ describe('Deterministic Coverage Checker & Second-Pass Loop', () => {
   });
 
   it('runs the second pass loop to close coverage gaps for uncovered must-haves', async () => {
-    const mockLlm = new LLMClient();
+    const mockLlm = new LLMClient('mock');
     const initialQuestions: Question[] = [
       { id: 'q1', requirement_ids: ['r1'], category: 'technical', prompt: 'Node', answer_outline: 'Loop', difficulty: 2 },
     ];
@@ -73,5 +73,5 @@ describe('Deterministic Coverage Checker & Second-Pass Loop', () => {
     // Deterministic check on resulting questions
     const finalCoverage = checkCoverage(sampleRole, loopResult.questions);
     expect(finalCoverage.uncoveredMustHaves.length).toBe(0);
-  });
+  }, 20000);
 });

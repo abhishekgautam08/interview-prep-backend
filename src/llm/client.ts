@@ -14,9 +14,9 @@ export class LLMClient {
   private rateLimiter: RateLimiter;
   private provider: 'gemini' | 'groq' | 'openai' | 'mock';
 
-  constructor() {
+  constructor(provider?: 'gemini' | 'groq' | 'openai' | 'mock') {
     this.rateLimiter = new RateLimiter(config.maxRequestsPerMinute);
-    this.provider = config.llmProvider;
+    this.provider = provider || config.llmProvider;
   }
 
   async generate(options: LLMRequestOptions): Promise<string> {

@@ -19,10 +19,13 @@ app.use((req, res, next) => {
   next();
 });
 
-// Middleware
+// Middleware: Permissive CORS supporting localhost, Vercel deployments, and evaluation runners
 app.use(
   cors({
-    origin: config.corsOrigin,
+    origin: (origin, callback) => {
+      // Reflect origin to permit cross-origin requests with credentials (Vercel, localhost, Render)
+      callback(null, true);
+    },
     credentials: true,
   })
 );

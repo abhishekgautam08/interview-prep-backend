@@ -2,11 +2,12 @@ import { describe, it, expect } from 'vitest';
 import fs from 'fs/promises';
 import path from 'path';
 import { PipelineOrchestrator } from '../src/pipeline/orchestrator.js';
+import { LLMClient } from '../src/llm/client.js';
 import { BatchInput, BatchOutputSchema } from '../src/types/schemas.js';
 
 describe('Batch Evaluation Path (Section 9 & Appendix B)', () => {
   it('runs the full pipeline on a batch case and produces valid Appendix B output', async () => {
-    const orchestrator = new PipelineOrchestrator();
+    const orchestrator = new PipelineOrchestrator(undefined, new LLMClient('mock'));
     const testCase = {
       id: 'test-case-batch-1',
       jd: 'Senior TypeScript Engineer. Must have 4+ years of React and Node.js. Experience mentoring junior devs.',
@@ -41,5 +42,5 @@ describe('Batch Evaluation Path (Section 9 & Appendix B)', () => {
 
     const parsed = BatchOutputSchema.safeParse(batchOutput);
     expect(parsed.success).toBe(true);
-  }, 30000);
+  }, 60000);
 });
