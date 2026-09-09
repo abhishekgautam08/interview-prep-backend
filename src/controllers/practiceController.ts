@@ -20,7 +20,7 @@ export class PracticeController {
         return;
       }
 
-      const record = await MemoryStore.getKitById(req.params.id, req.userId!);
+      const record = await MemoryStore.getKitById(String(req.params.id), req.userId!);
       if (!record) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;
@@ -40,7 +40,7 @@ export class PracticeController {
         card._provenance.lastReviewedAt = new Date().toISOString();
       }
 
-      await MemoryStore.updateKit(req.params.id, req.userId!, kit);
+      await MemoryStore.updateKit(String(req.params.id), req.userId!, kit);
       res.status(200).json({ success: true, cardId, confidence: confNum });
     } catch (err: any) {
       res.status(500).json({ error: 'INTERNAL_ERROR', message: err.message });
@@ -59,7 +59,7 @@ export class PracticeController {
         return;
       }
 
-      const record = await MemoryStore.getKitById(req.params.id, req.userId!);
+      const record = await MemoryStore.getKitById(String(req.params.id), req.userId!);
       if (!record) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;

@@ -95,7 +95,7 @@ export class SafeCrawler {
         headers: { 'User-Agent': this.userAgent },
         validateStatus: status => status === 200,
       });
-      return robotsParser(robotsUrl, res.data);
+      return (robotsParser as any)(robotsUrl, res.data);
     } catch {
       return null;
     }
@@ -112,7 +112,7 @@ export class SafeCrawler {
       validateStatus: status => status >= 200 && status < 300,
     });
 
-    const contentType = res.headers['content-type'] || '';
+    const contentType = String(res.headers['content-type'] || '');
     if (!contentType.includes('text/html') && !contentType.includes('text/plain')) {
       throw new Error(`Unsupported content type: ${contentType}`);
     }

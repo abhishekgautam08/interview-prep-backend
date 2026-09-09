@@ -49,7 +49,7 @@ export function buildSchedule(
 
     if (q.category === 'system-design') score += 6;
     else if (q.category === 'technical') score += 4;
-    else if (q.category === 'domain') score += 3;
+    else if (q.category === 'company-fit') score += 3;
     else if (q.category === 'behavioural') score += 2;
     else score += 1;
 

@@ -88,7 +88,7 @@ export class KitController {
 
   static async get(req: AuthRequest, res: Response): Promise<void> {
     try {
-      const kit = await MemoryStore.getKitById(req.params.id, req.userId!);
+      const kit = await MemoryStore.getKitById(String(req.params.id), req.userId!);
       if (!kit) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Interview prep kit not found.' });
         return;
@@ -108,7 +108,7 @@ export class KitController {
       }
 
       const validated = KitSchema.parse(kit);
-      const updated = await MemoryStore.updateKit(req.params.id, req.userId!, validated);
+      const updated = await MemoryStore.updateKit(String(req.params.id), req.userId!, validated);
       if (!updated) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;
@@ -122,7 +122,7 @@ export class KitController {
 
   static async delete(req: AuthRequest, res: Response): Promise<void> {
     try {
-      const deleted = await MemoryStore.deleteKit(req.params.id, req.userId!);
+      const deleted = await MemoryStore.deleteKit(String(req.params.id), req.userId!);
       if (!deleted) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;
@@ -145,7 +145,7 @@ export class KitController {
         return;
       }
 
-      const record = await MemoryStore.getKitById(req.params.id, req.userId!);
+      const record = await MemoryStore.getKitById(String(req.params.id), req.userId!);
       if (!record) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;
@@ -236,7 +236,7 @@ Output JSON:
       // Re-allocate schedule deterministically to keep question IDs aligned
       currentKit.schedule = buildSchedule(currentKit.role, allUpdatedQuestions, currentKit.schedule.days_available);
 
-      const updatedRecord = await MemoryStore.updateKit(req.params.id, req.userId!, currentKit);
+      const updatedRecord = await MemoryStore.updateKit(String(req.params.id), req.userId!, currentKit);
       res.status(200).json(updatedRecord);
     } catch (err: any) {
       res.status(500).json({ error: 'REGENERATION_FAILED', message: err.message });
@@ -248,7 +248,7 @@ Output JSON:
    */
   static async regenerateBrief(req: AuthRequest, res: Response): Promise<void> {
     try {
-      const record = await MemoryStore.getKitById(req.params.id, req.userId!);
+      const record = await MemoryStore.getKitById(String(req.params.id), req.userId!);
       if (!record) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;
@@ -274,7 +274,7 @@ Output JSON:
       currentKit.company_brief.summary = String(raw.summary || currentKit.company_brief.summary);
       currentKit.company_brief.what_they_do = String(raw.what_they_do || currentKit.company_brief.what_they_do);
 
-      const updated = await MemoryStore.updateKit(req.params.id, req.userId!, currentKit);
+      const updated = await MemoryStore.updateKit(String(req.params.id), req.userId!, currentKit);
       res.status(200).json(updated);
     } catch (err: any) {
       res.status(500).json({ error: 'BRIEF_REGENERATION_FAILED', message: err.message });
@@ -293,7 +293,7 @@ Output JSON:
         return;
       }
 
-      const record = await MemoryStore.getKitById(req.params.id, req.userId!);
+      const record = await MemoryStore.getKitById(String(req.params.id), req.userId!);
       if (!record) {
         res.status(404).json({ error: 'NOT_FOUND', message: 'Kit not found.' });
         return;
@@ -302,7 +302,7 @@ Output JSON:
       const currentKit: Kit = record.kit;
       currentKit.schedule = buildSchedule(currentKit.role, currentKit.questions, daysCount);
 
-      const updated = await MemoryStore.updateKit(req.params.id, req.userId!, currentKit);
+      const updated = await MemoryStore.updateKit(String(req.params.id), req.userId!, currentKit);
       res.status(200).json(updated);
     } catch (err: any) {
       res.status(500).json({ error: 'SCHEDULE_REGENERATION_FAILED', message: err.message });
