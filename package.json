@@ -1,7 +1,7 @@
 {
   "name": "interview-prep-backend",
   "version": "1.0.0",
-  "description": "The AI Interview Prep Kit Backend - Trao Engineering Assessment (FS-AI-INTERVIEW-01)",
+  "description": "The AI Interview Prep Kit Backend - (FS-AI-INTERVIEW-01)",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {

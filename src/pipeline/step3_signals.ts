@@ -35,7 +35,7 @@ Internal Crawl Hiring Notes: ${hiringProcessNotes}`;
     });
 
     return {
-      processOverview: String(raw.processOverview || 'Recruiter Screen, Technical Assessment, and Onsite Rounds'),
+      processOverview: String(raw.processOverview || 'Recruiter Screen, Technical, and Onsite Rounds'),
       interviewStages: Array.isArray(raw.interviewStages)
         ? raw.interviewStages.map(String)
         : ['Initial Recruiter Call', 'Technical Deep-Dive', 'System Architecture', 'Cultural Alignment'],

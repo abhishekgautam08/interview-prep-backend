@@ -1,6 +1,6 @@
 # The AI Interview Prep Kit — Backend Service & Batch Pipeline
 
-> **Assessment ID:** `FS-AI-INTERVIEW-01` | **Client:** Trao Full-Stack Engineering Assessment  
+> **ID:** `FS-AI-INTERVIEW-01` | **Client:** Full-Stack Engineering  
 > **Repository:** `interview-prep-backend` (Standalone Backend Service & Pipeline)
 
 A resilient, multi-step engineering pipeline and Express REST/SSE API that turns an untrusted job description and company URL into a tailored, day-by-day interview preparation kit.

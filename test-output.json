@@ -313,8 +313,8 @@
       "status": "ok",
       "kit": {
         "source": {
-          "company": "Invalid-non-existent-domain-trao-assessment-test",
-          "company_url": "https://invalid-non-existent-domain-trao-assessment-test.org/404",
+          "company": "Invalid-non-existent-domain-test",
+          "company_url": "https://invalid-non-existent-domain-test.org/404",
           "role": "<untrusted_jd>",
           "location": "Remote / Hybrid",
           "jd_chars": 44,

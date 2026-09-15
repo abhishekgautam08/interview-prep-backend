@@ -6,7 +6,7 @@ export const config = {
   nodeEnv: process.env.NODE_ENV || 'development',
   corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:3000',
   mongodbUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/interview_prep',
-  jwtSecret: process.env.JWT_SECRET || 'fallback_jwt_secret_trao_assessment_2026',
+  jwtSecret: process.env.JWT_SECRET || 'fallback_jwt_secret_2026',
   
   // LLM Provider configuration
   llmProvider: (process.env.LLM_PROVIDER || 'mock') as 'gemini' | 'groq' | 'openai' | 'mock',
